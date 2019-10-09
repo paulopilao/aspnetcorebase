@@ -4,10 +4,10 @@ using AspNetCoreBase.Models;
 
 namespace AspNetCoreBase.Services
 {
-    public class PessoaService:IPessoaService
+    public class PessoaServiceMemory:IPessoaService
     {
         private  readonly  List<Pessoa> _pessoas;
-        public PessoaService()
+        public PessoaServiceMemory()
         {
             _pessoas = new List<Pessoa>()
             {
